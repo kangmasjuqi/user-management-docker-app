@@ -1,10 +1,10 @@
 # User Management - Docker App for Laravel + React
 
-    A simple full-stack application with MySQL database, Laravel backend API, and React frontend, all containerized with Docker.
+A simple full-stack application with MySQL database, Laravel backend API, and React frontend, all containerized with Docker.
 
 ## Demo
 
-    https://www.loom.com/share/f7abe4959a2c4340a68c56afe2b34aed
+https://www.loom.com/share/f7abe4959a2c4340a68c56afe2b34aed
 
 
 ## 🏗️ Architecture
