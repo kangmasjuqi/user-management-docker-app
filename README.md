@@ -2,6 +2,9 @@
 
 A simple full-stack application with MySQL database, Laravel backend API, and React frontend, all containerized with Docker.
 
+<img width="1132" height="441" alt="Screen Shot 2025-08-15 at 17 49 40" src="https://github.com/user-attachments/assets/605ebbda-fa79-4edf-a2c6-0078f075b5ad" />
+
+
 ## Demo
 
 https://www.loom.com/share/f7abe4959a2c4340a68c56afe2b34aed
