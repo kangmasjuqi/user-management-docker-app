@@ -5,6 +5,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class UserEducation extends Model
 {
@@ -20,6 +21,21 @@ class UserEducation extends Model
         'major',
         'gpa',
     ];
+
+    protected static function booted()
+    {
+        static::created(function ($education) {
+            Cache::forget("user:{$education->user_id}:with_educations");
+        });
+
+        static::updated(function ($education) {
+            Cache::forget("user:{$education->user_id}:with_educations");
+        });
+
+        static::deleted(function ($education) {
+            Cache::forget("user:{$education->user_id}:with_educations");
+        });
+    }
 
     public function user()
     {
