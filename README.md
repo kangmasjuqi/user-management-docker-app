@@ -2,7 +2,17 @@
 
 A simple full-stack application with MySQL database, Laravel backend API, and React frontend, all containerized with Docker.
 
-<img width="1132" height="441" alt="Screen Shot 2025-08-15 at 17 49 40" src="https://github.com/user-attachments/assets/605ebbda-fa79-4edf-a2c6-0078f075b5ad" />
+-- pic 1 
+<img width="531" height="663" alt="Screen Shot 2025-08-17 at 07 27 20" src="https://github.com/user-attachments/assets/4d9eb364-9b8e-4e16-a431-687a8b8a9f3d" />
+
+-- pic 2
+<img width="997" height="710" alt="Screen Shot 2025-08-17 at 07 27 36" src="https://github.com/user-attachments/assets/4836ea32-4e37-4edc-b60a-ce5b8d5c939a" />
+
+-- pic 3
+<img width="925" height="492" alt="Screen Shot 2025-08-17 at 07 27 45" src="https://github.com/user-attachments/assets/ce34f764-94f2-4827-8505-d06d614d62b8" />
+
+-- pic 4
+<img width="1190" height="702" alt="Screen Shot 2025-08-17 at 07 28 17" src="https://github.com/user-attachments/assets/48eab69b-6a58-4713-86ae-e4a62b7c5490" />
 
 
 ## Demo
