@@ -7,6 +7,7 @@ function Dashboard() {
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [notifStatus, setNotifStatus] = useState('');
   const { apiUrl } = useAuth();
 
   useEffect(() => {
@@ -24,12 +25,32 @@ function Dashboard() {
     fetchStats();
   }, [apiUrl]);
 
+  const handleSendNotif = async () => {
+    try {
+      setNotifStatus('Sending...');
+      await axios.post('/api/sendNotif');
+      setNotifStatus('✅ Notifications sent successfully');
+    } catch (err) {
+      setNotifStatus('❌ Failed to send notifications');
+    }
+  };
+
   if (loading) return <div className="loading">Loading...</div>;
   if (error) return <div className="error">{error}</div>;
 
   return (
     <div className="dashboard">
       <h1>Dashboard</h1>
+
+        <div className="actions mb-2">
+            <button 
+                onClick={handleSendNotif} 
+                className="btn-send-notif"
+            >
+                Send Bulk Notif
+            </button>
+            {notifStatus && <p>{notifStatus}</p>}
+        </div>
       
       <div className="stats-grid">
         <div className="stat-card">

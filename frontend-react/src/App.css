@@ -563,3 +563,19 @@ body {
     padding: 1rem;
   }
 }
+
+.btn-send-notif {
+  background-color: #3fb9ea; /* blue-600 */
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-send-notif:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
